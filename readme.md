@@ -10,6 +10,11 @@ This project aims to check the integration of Streamlit and a local Language Mod
 - [Hugging Face Local Pipelines](https://python.langchain.com/docs/integrations/llms/huggingface_pipelines/)
 - [The Iris Dataset](https://scikit-learn.org/stable/auto_examples/datasets/plot_iris_dataset.html)
 - [st.scatter_chart](https://docs.streamlit.io/develop/api-reference/charts/st.scatter_chart)
+- [Sample Application](https://python.langchain.com/docs/langserve/#sample-application)
+
+## How to Launch the App:
+1. Execute the command `python server.py` to launch the LLM app.
+2. Execute the command `streamlit run streamlit_app.py` to launch the Streamlit app.
 
 Feel free to explore the code and experiment with Streamlit and your local Language Model!
 
@@ -25,5 +30,10 @@ Feel free to explore the code and experiment with Streamlit and your local Langu
 - [Hugging Face Local Pipelines](https://python.langchain.com/docs/integrations/llms/huggingface_pipelines/)
 - [The Iris Dataset](https://scikit-learn.org/stable/auto_examples/datasets/plot_iris_dataset.html)
 - [st.scatter_chart](https://docs.streamlit.io/develop/api-reference/charts/st.scatter_chart)
+- [Sample Application](https://python.langchain.com/docs/langserve/#sample-application)
+
+## アプリの起動方法:
+1. `python server.py` を実行して LLM アプリを起動します。
+2. `streamlit run streamlit_app.py` を実行して Streamlit アプリを起動します。
 
 コードを探索して、Streamlit とローカル言語モデルを試してみてください！
