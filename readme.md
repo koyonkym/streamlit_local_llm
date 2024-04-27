@@ -16,6 +16,8 @@ This project aims to check the integration of Streamlit and a local Language Mod
 1. Execute the command `python server.py` to launch the LLM app.
 2. Execute the command `streamlit run streamlit_app.py` to launch the Streamlit app.
 
+**Note:** You may need to change the host as needed in deployment, for example, from `localhost` to `0.0.0.0`.
+
 Feel free to explore the code and experiment with Streamlit and your local Language Model!
 
 ### Japanese:
@@ -35,5 +37,7 @@ Feel free to explore the code and experiment with Streamlit and your local Langu
 ## アプリの起動方法:
 1. `python server.py` を実行して LLM アプリを起動します。
 2. `streamlit run streamlit_app.py` を実行して Streamlit アプリを起動します。
+
+**注意:** デプロイ時には必要に応じてホストを変更する必要があります。たとえば、`localhost` から `0.0.0.0` に変更します。
 
 コードを探索して、Streamlit とローカル言語モデルを試してみてください！
