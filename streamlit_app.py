@@ -3,12 +3,12 @@ from sklearn import datasets
 from langserve import RemoteRunnable
 
 
-opt = RemoteRunnable("http://localhost:8000/opt/")
+instruction = RemoteRunnable("http://localhost:8000/instruction/")
 
 iris = datasets.load_iris()
 
 def generate_response(input_text):
-    st.info(opt.invoke(input_text))
+    st.info(instruction.invoke(input_text))
     st.scatter_chart(iris.data)
 
 with st.form('my_form'):

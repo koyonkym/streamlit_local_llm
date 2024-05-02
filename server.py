@@ -1,7 +1,6 @@
 from fastapi import FastAPI
 from langserve import add_routes
-from peft import AutoPeftModelForCausalLM
-from transformers import AutoTokenizer
+from transformers import AutoModelForCausalLM, AutoTokenizer
 import torch
 from langchain_community.llms.huggingface_pipeline import HuggingFacePipeline
 from transformers import pipeline
@@ -13,14 +12,15 @@ app = FastAPI(
     description="A simple api server using Langchain's Runnable interfaces",
 )
 
-model = AutoPeftModelForCausalLM.from_pretrained("ybelkada/opt-350m-lora")
-tokenizer = AutoTokenizer.from_pretrained("facebook/opt-350m")
-pipe = pipeline("text-generation", model=model, tokenizer=tokenizer, max_new_tokens=10)
+model = AutoModelForCausalLM.from_pretrained("distilbert/distilgpt2")
+model.load_adapter("distilgpt2-instruct")
+tokenizer = AutoTokenizer.from_pretrained("distilbert/distilgpt2")
+pipe = pipeline("text-generation", model=model, tokenizer=tokenizer, max_new_tokens=100)
 llm = HuggingFacePipeline(pipeline=pipe)
 add_routes(
     app,
     llm,
-    path="/opt",
+    path="/instruction",
 )
 
 if __name__ == "__main__":
