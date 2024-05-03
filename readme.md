@@ -5,16 +5,16 @@
 This project aims to check the integration of Streamlit and a local Language Model (LLM). The source code is based on several tutorial web pages, which are listed below.
 
 ## Tutorials Used:
-- [Build an LLM app using LangChain](https://docs.streamlit.io/develop/tutorials/llms/llm-quickstart)
+- [Build an LLM app using LangChain - Streamlit Docs](https://docs.streamlit.io/develop/tutorials/llms/llm-quickstart)
 - [Quicktour](https://huggingface.co/docs/peft/en/quicktour)
-- [Hugging Face Local Pipelines](https://python.langchain.com/docs/integrations/llms/huggingface_pipelines/)
-- [The Iris Dataset](https://scikit-learn.org/stable/auto_examples/datasets/plot_iris_dataset.html)
-- [st.scatter_chart](https://docs.streamlit.io/develop/api-reference/charts/st.scatter_chart)
-- [Sample Application](https://python.langchain.com/docs/langserve/#sample-application)
+- [Hugging Face Local Pipelines | 
+🦜️🔗 LangChain](https://python.langchain.com/docs/integrations/llms/huggingface_pipelines/)
+- [🦜️🏓 LangServe | 🦜️🔗 LangChain](https://python.langchain.com/docs/langserve/#sample-application)
 - [Supervised Fine-tuning Trainer](https://huggingface.co/docs/trl/en/sft_trainer)
-- [Datasets:HuggingFaceH4/instruction-dataset](https://huggingface.co/datasets/HuggingFaceH4/instruction-dataset)
+- [HuggingFaceH4/instruction-dataset · Datasets at Hugging Face](https://huggingface.co/datasets/HuggingFaceH4/instruction-dataset)
 - [Causal language modeling](https://huggingface.co/docs/transformers/en/tasks/language_modeling)
 - [Load adapters with 🤗 PEFT](https://huggingface.co/docs/transformers/en/peft)
+- [Create an app - Streamlit Docs](https://docs.streamlit.io/get-started/tutorials/create-an-app)
 
 ## How to Launch the App:
 1. Execute the command `python server.py` to launch the LLM app.
@@ -43,16 +43,16 @@ Feel free to explore the code and experiment with Streamlit and your local Langu
 このプロジェクトは、Streamlit とローカル言語モデル（LLM）の統合を確認することを目的としています。ソースコードはいくつかのチュートリアルウェブページに基づいており、以下にリストされています。
 
 ## 使用したチュートリアル:
-- [Build an LLM app using LangChain](https://docs.streamlit.io/develop/tutorials/llms/llm-quickstart)
+- [Build an LLM app using LangChain - Streamlit Docs](https://docs.streamlit.io/develop/tutorials/llms/llm-quickstart)
 - [Quicktour](https://huggingface.co/docs/peft/en/quicktour)
-- [Hugging Face Local Pipelines](https://python.langchain.com/docs/integrations/llms/huggingface_pipelines/)
-- [The Iris Dataset](https://scikit-learn.org/stable/auto_examples/datasets/plot_iris_dataset.html)
-- [st.scatter_chart](https://docs.streamlit.io/develop/api-reference/charts/st.scatter_chart)
-- [Sample Application](https://python.langchain.com/docs/langserve/#sample-application)
+- [Hugging Face Local Pipelines | 
+🦜️🔗 LangChain](https://python.langchain.com/docs/integrations/llms/huggingface_pipelines/)
+- [🦜️🏓 LangServe | 🦜️🔗 LangChain](https://python.langchain.com/docs/langserve/#sample-application)
 - [Supervised Fine-tuning Trainer](https://huggingface.co/docs/trl/en/sft_trainer)
-- [Datasets:HuggingFaceH4/instruction-dataset](https://huggingface.co/datasets/HuggingFaceH4/instruction-dataset)
+- [HuggingFaceH4/instruction-dataset · Datasets at Hugging Face](https://huggingface.co/datasets/HuggingFaceH4/instruction-dataset)
 - [Causal language modeling](https://huggingface.co/docs/transformers/en/tasks/language_modeling)
 - [Load adapters with 🤗 PEFT](https://huggingface.co/docs/transformers/en/peft)
+- [Create an app - Streamlit Docs](https://docs.streamlit.io/get-started/tutorials/create-an-app)
 
 ## アプリの起動方法:
 1. `python server.py` を実行して LLM アプリを起動します。
