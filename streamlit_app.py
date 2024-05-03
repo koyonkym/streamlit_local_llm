@@ -1,5 +1,5 @@
 import streamlit as st
-from langchain.prompts import ChatPromptTemplate
+from langchain_core.prompts import PromptTemplate
 from langserve import RemoteRunnable
 import pandas as pd
 import numpy as np
@@ -34,11 +34,14 @@ st.bar_chart(hist_values)
 
 instruction = RemoteRunnable("http://localhost:8000/instruction/")
 
-prompt = ChatPromptTemplate.from_template("### Question: Explore the Uber pickups data for New York City, showcasing the number of pickups per hour. The dataset includes hourly counts of pickups throughout the day. Provide insights into the trends and patterns observed in the data. Data: {data}\n ### Answer: ")
+prompt_template = PromptTemplate.from_template(
+    "### Question: Explore the Uber pickups data for New York City, showcasing the number of pickups per hour. The dataset includes hourly counts of pickups throughout the day. Provide insights into the trends and patterns observed in the data. Data: {data}\n ### Answer: "
+)
 
-chain = prompt | instruction
+chain = prompt_template | instruction
 
 def generate_response(data):
-    st.info(chain.invoke({"data": data}))
+    st.info(chain.invoke({"data": data})[len(prompt_template.format(data=data)):])
+    st.warning("This project focuses solely on verifying the integration between Streamlit and the local Large Language Model (LLM). Please note that generated texts may lack coherence or relevance.", icon="⚠️")
 
 generate_response(str(hist_dict))
