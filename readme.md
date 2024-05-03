@@ -1,8 +1,8 @@
 ### English:
 
-# Streamlit and Local Language Model Integration
+# Streamlit and Local Large Language Model Integration
 
-This project aims to check the integration of Streamlit and a local Language Model (LLM). The source code is based on several tutorial web pages, which are listed below.
+This project aims to check the integration of Streamlit and a local Large Language Model (LLM). The source code is based on several tutorial web pages, which are listed below.
 
 ## Tutorials Used:
 - [Build an LLM app using LangChain - Streamlit Docs](https://docs.streamlit.io/develop/tutorials/llms/llm-quickstart)
@@ -15,6 +15,8 @@ This project aims to check the integration of Streamlit and a local Language Mod
 - [Causal language modeling](https://huggingface.co/docs/transformers/en/tasks/language_modeling)
 - [Load adapters with 🤗 PEFT](https://huggingface.co/docs/transformers/en/peft)
 - [Create an app - Streamlit Docs](https://docs.streamlit.io/get-started/tutorials/create-an-app)
+- [Quick reference 🦜️🔗 LangChain](https://python.langchain.com/docs/modules/model_io/prompts/quick_start/#prompttemplate)
+- [st.warning - Streamlit Docs](https://docs.streamlit.io/develop/api-reference/status/st.warning)
 
 ## How to Launch the App:
 1. Execute the command `python server.py` to launch the LLM app.
@@ -38,9 +40,9 @@ Feel free to explore the code and experiment with Streamlit and your local Langu
 
 ### Japanese:
 
-# Streamlit と ローカル言語モデルの統合
+# Streamlit と ローカル大規模言語モデルの統合
 
-このプロジェクトは、Streamlit とローカル言語モデル（LLM）の統合を確認することを目的としています。ソースコードはいくつかのチュートリアルウェブページに基づいており、以下にリストされています。
+このプロジェクトは、Streamlit とローカル大規模言語モデル（LLM）の統合を確認することを目的としています。ソースコードはいくつかのチュートリアルウェブページに基づいており、以下にリストされています。
 
 ## 使用したチュートリアル:
 - [Build an LLM app using LangChain - Streamlit Docs](https://docs.streamlit.io/develop/tutorials/llms/llm-quickstart)
@@ -53,6 +55,8 @@ Feel free to explore the code and experiment with Streamlit and your local Langu
 - [Causal language modeling](https://huggingface.co/docs/transformers/en/tasks/language_modeling)
 - [Load adapters with 🤗 PEFT](https://huggingface.co/docs/transformers/en/peft)
 - [Create an app - Streamlit Docs](https://docs.streamlit.io/get-started/tutorials/create-an-app)
+- [Quick reference 🦜️🔗 LangChain](https://python.langchain.com/docs/modules/model_io/prompts/quick_start/#prompttemplate)
+- [st.warning - Streamlit Docs](https://docs.streamlit.io/develop/api-reference/status/st.warning)
 
 ## アプリの起動方法:
 1. `python server.py` を実行して LLM アプリを起動します。
